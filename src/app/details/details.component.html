@@ -4,6 +4,14 @@
     <ul>
       <li><strong>Username:</strong> {{user$.username}}</li>
       <li><strong>Email:</strong> {{user$.email}}</li>
-      <li><strong>Website:</strong> {{user$.phone}}</li>
+      <li><strong>Phone:</strong> {{user$.phone}}</li>
+      <li><strong>Website:</strong> {{user$.website}}</li>
+      <li><strong>Company:</strong>
+        <ul>
+          <li><strong>Name:</strong> {{user$.company.name}}</li>
+          <li><strong>Phrase:</strong> {{user$.company.catchPhrase}}</li>
+          <li><strong>BS:</strong> {{user$.company.bs}}</li>
+        </ul>
+      </li>
     </ul>
 </div>
