@@ -1,3 +1,13 @@
-<p>
-  passes works!
-</p>
+<h1>Passes</h1>
+<p>Uydu İsmi: {{info$.info.satname}} </p>
+<p>Geçis sayısı: {{info$.info.passescount}} </p>
+
+<ul>
+  <li *ngFor="let pass of passes$">
+    <p><strong>Parlak Zamanı: </strong>{{pass.maxUTC * 1000 |date:'yyyy-MM-dd HH:mm:ss Z'}}</p>
+    <p><strong>Parlaklık Şiddeti:</strong> {{pass.mag}}</p>
+    <p><strong>Parlama Süresi:</strong> {{pass.duration}} </p>
+    <p><strong> açısı: </strong> {{pass.maxAz}}</p>
+    <p><strong> parlak yönü: </strong>{{pass.maxAzCompass}}</p>
+  </li>
+</ul>
